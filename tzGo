@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func main() {
+	var num1 int = rand.Intn(11)
+
+	var num2 int
+
+	fmt.Scan(&num2)
+	for num2 != num1 {
+		if num2 > num1 {
+			fmt.Println("Ваше число больше!")
+			fmt.Scan(&num2)
+		}
+		if num2 < num1 {
+			fmt.Println("Ваше число меньше!")
+			fmt.Scan(&num2)
+		}
+		if num2 > 10 && num2 < 1 {
+			fmt.Println("Введите число от 1 до 10 включительно!")
+			fmt.Scan(&num2)
+		}
+		if num2 == num1 {
+			fmt.Println("Правильно")
+		}
+	}
+
+}
