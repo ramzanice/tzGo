@@ -12,20 +12,6 @@ func main() {
 
 	fmt.Scan(&num2)
 
-	switch {
-	case num2 > 10 || num2 < 1:
-		fmt.Println("Введите число от 1 до 10 включительно!")
-		fmt.Scan(&num2)
-	case num2 > num1:
-		fmt.Println("Ваше число больше!")
-		fmt.Scan(&num2)
-	case num2 < num1:
-		fmt.Println("Ваше число меньше!")
-		fmt.Scan(&num2)
-	default:
-		fmt.Println("Правильно")
-	}
-
 	for num2 != num1 {
 		if num2 > 10 || num2 < 1 {
 			fmt.Println("Введите число от 1 до 10 включительно!")
